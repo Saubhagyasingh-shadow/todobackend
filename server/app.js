@@ -1,10 +1,10 @@
 import  express  from "express";
-import apiRoute, { apiProtected } from "./routes/api.js";
+import apiRoute, { apiProtected } from "./src/routes/api.js";
 import mongoose from "mongoose";
-import AuthMiddleWare from "./middleware/AuthMiddleware.js";
+import AuthMiddleWare from "./src/middleware/AuthMiddleware.js";
 import cors from 'cors'
 const app=express();
-const PORT=8000;
+const PORT=10000;
 
 const db_link='mongodb+srv://admin:IqJZpAxm5pEDP5rd@cluster0.fesaujr.mongodb.net/todo?retryWrites=true&w=majority'
 mongoose.connect(db_link)
