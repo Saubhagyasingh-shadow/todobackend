@@ -1,6 +1,6 @@
 import express from "express";
 import Register from "../controllers/Register.controller.js";
-import { createTodo } from "../controllers/todo.controller.js";
+import { createTodo } from "../controllers/Todo.controller.js";
 import { check } from "express-validator";
 import { RegisterSchema } from "../validationSchema.js/RegisterSchema.js";
 import Login from "../controllers/Login.controller.js";
